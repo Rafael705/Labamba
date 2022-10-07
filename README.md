@@ -7,4 +7,6 @@
 
 ## Tecnologias :rocket: 
   - Arduino
-  
+  - Ponte H
+  - Motor DC/ com caixa de redução
+ 
