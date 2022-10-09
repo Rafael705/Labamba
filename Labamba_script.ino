@@ -3,14 +3,12 @@
 #define pinSentido1MotorA 3 // pino do motor
 #define pinSentido2MotorA 2 // pino motor 
 
-
-
+// foi criado Três variaves para o botão pq ele tem três estadoa.
+// Liga e gira no sendido horario, clica de novo e gira no sentido antihorario e clica de novo e desliga o brinquedo.
 byte estadoA = 0;
 bool estadoBotaoA = true;
 bool estadoAntBotaoA = true;
 unsigned long delayBotaoA;
-// foi criado Três variaves para o botão pq ele tem três estadoa.
-// Liga e gira no sendido horario, clica de novo e gira no sentido antihorario e clica de novo e desliga o brinquedo.
 
 void setup() {
   
@@ -34,25 +32,23 @@ void loop() {
   } else if (estadoBotaoA != estadoAntBotaoA) {
         delayBotaoA = millis();    
   }
+
   estadoAntBotaoA = estadoBotaoA;
 
- 
-
-  if (estadoA == 0) {
-    
-     digitalWrite(pinSentido1MotorA, LOW);
-     digitalWrite(pinSentido2MotorA, LOW);    
-
-  } else {   
-    
-     if (estadoA == 1) {
+  switch(estadoA) {
+    case 0: 
         digitalWrite(pinSentido1MotorA, LOW);
-        digitalWrite(pinSentido2MotorA, HIGH);
-        
-     } else {//estadoA == 2
-       
+        digitalWrite(pinSentido2MotorA, LOW); 
+      break;
+      
+    case 1: 
+        digitalWrite(pinSentido1MotorA, LOW);
+        digitalWrite(pinSentido2MotorA, HIGH); 
+      break;
+    
+    case 2: 
         digitalWrite(pinSentido1MotorA, HIGH);
-        digitalWrite(pinSentido2MotorA, LOW);      
-     }
-  } 
+        digitalWrite(pinSentido2MotorA, LOW);  
+      break;
+  }
 }
