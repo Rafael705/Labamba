@@ -14,5 +14,5 @@
   - Arduino
   - Ponte H
   - Motor DC/ com caixa de redução
-  - Fita de Led
+  - 8 Leds
  
