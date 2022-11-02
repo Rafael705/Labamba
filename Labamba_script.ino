@@ -3,8 +3,8 @@
 #define pinSentido1MotorA 3 // pino do motor
 #define pinSentido2MotorA 2 // pino motor
 
-#define ledA 13
-#define ledB 12
+#define ledA 13 // pino do led
+#define ledB 12 // pino do led
 
 
 // foi criado Três variaves para o botão pq ele tem três estadoa.
