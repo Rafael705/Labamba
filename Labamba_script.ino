@@ -3,6 +3,10 @@
 #define pinSentido1MotorA 3 // pino do motor
 #define pinSentido2MotorA 2 // pino motor
 
+#define ledA 13
+#define ledB 12
+
+
 // foi criado Três variaves para o botão pq ele tem três estadoa.
 // Liga e gira no sendido horario, clica de novo e gira no sentido antihorario e clica de novo e desliga o brinquedo.
 byte estadoMotor = 0;
@@ -37,11 +41,22 @@ void setup()
   pinMode(pinBotaoA, INPUT_PULLUP);
   pinMode(pinSentido1MotorA, OUTPUT);
   pinMode(pinSentido2MotorA, OUTPUT);
+  pinMode(ledA, OUTPUT);
+  pinMode(ledB, OUTPUT);
 }
 
 void loop()
 {
-
+  
+  digitalWrite(ledA, HIGH);
+  digitalWrite(ledB, HIGH);
+  delay(100);
+  digitalWrite(ledA, LOW);
+  digitalWrite(ledB, LOW);
+  delay(100);
+  
+  
+  
   estadoBotaoA = digitalRead(pinBotaoA);
   if (!estadoBotaoA && estadoAntBotaoA)
   {
