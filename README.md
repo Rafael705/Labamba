@@ -1,8 +1,7 @@
 <h1 align='center'>Labamba</h1> 
 
       
-- Olá meu nome é Rafael Pontes, estou desenvolvendo um projeto de parque de diversões na qual o brinquedo escolhido foi o Lambaba/Samba, o projeto foi criado pela minha professora do meu Itinerario de Ciências e Aplicações (CA).
-
+- Este projeto consiste na criação de uma versão em escala reduzida do brinquedo LaBamba, popular em parques de diversões. O modelo replica os movimentos rotacionais e inclinados característicos do brinquedo original, utilizando motores e um sistema de controle programado em C#.
 
 
 <h2>Referencias e Inspiraçes</h2>
@@ -12,8 +11,9 @@
 <h2>Projeto Final</h2>
 
 ## Tecnologias :rocket: 
-  - Arduino
-  - Ponte H
-  - Motor DC/ com caixa de redução
-  - 8 Leds
+- Microcontrolador: Arduino/ESP8266
+- Motores: Motores DC 
+- Estrutura: Base de madeira ou acrílico
+- Fonte de Alimentação: Bateria ou fonte de energia externa
+- Software: C# para controle do movimento e comunicação com os motore
  
