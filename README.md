@@ -1,7 +1,6 @@
 <h1 align='center'>Labamba</h1> 
 
-   
-- Este projeto consiste na criação de uma versão em escala reduzida do brinquedo LaBamba, popular em parques de diversões. O modelo replica os movimentos rotacionais e inclinados característicos do brinquedo original, utilizando motores e um sistema de controle programado em C#.
+ Este projeto consiste na criação de uma versão em escala reduzida do brinquedo LaBamba, popular em parques de diversões. O modelo replica os movimentos rotacionais e inclinados característicos do brinquedo original, utilizando motores e um sistema de controle programado em C#.
 
 
 <h2>Referencias e Inspiraçes</h2>
