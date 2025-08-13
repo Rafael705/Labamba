@@ -50,11 +50,4 @@ https://github.com/user-attachments/assets/16c20583-da40-4530-89d5-d2b08c9c69ce
 
 ---
 
-## 📄 Licença
-
-Este projeto é distribuído sob a licença MIT.  
-Sinta-se à vontade para usar, modificar e compartilhar.
-
----
-
 <p align="center">Feito com ❤️ e muita rotação ⚙️</p>
